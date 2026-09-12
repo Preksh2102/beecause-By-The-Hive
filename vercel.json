@@ -3,6 +3,10 @@
     "cleanUrls": true,
     "routes": [
       {
+        "src": "/src/server.ts",
+        "status": 404
+      },
+      {
         "src": "/(.*)",
         "dest": "/index.html"
       }
