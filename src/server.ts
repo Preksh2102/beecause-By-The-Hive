@@ -1,7 +1,8 @@
-import "./lib/error-capture.ts";
+import "./lib/error-capture.js";
 
-import { consumeLastCapturedError } from "./lib/error-capture.ts";
-import { renderErrorPage } from "./lib/error-page.ts";
+import { consumeLastCapturedError } from "./lib/error-capture.js";
+import { renderErrorPage } from "./lib/error-page.js";
+
 
 type ServerEntry = {
   fetch: (request: Request, env: unknown, ctx: unknown) => Promise<Response> | Response;
