@@ -7,14 +7,20 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+
   resolve: {
-    tsconfigPaths: true, // 👈 Native Vite path resolution enabled here
+    tsconfigPaths: true,
   },
+
   plugins: [
     tailwindcss(),
+
     tanstackStart({
-      server: { entry: "src/server.ts" },
+      server: {
+        entry: "src/server.ts",
+      },
     }),
+
     viteReact(),
   ],
 });
